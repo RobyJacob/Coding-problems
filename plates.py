@@ -19,7 +19,7 @@ t = int(input())
 for tc in range(t):
     N, K, P = list(map(int, input().split()))
 
-    stacks = [[0 for _ in range(K+1)] for _ in range(N+1)]
+    stacks = [[0 for _ in range(K+1)] for _ in range(N+1)
 
     for i in range(1, N+1):
         stacks[i][1:] = list(map(int, input().split()))
